@@ -26,7 +26,7 @@ public class MainClase2 {
 		clioVerde.chasis=123456789l;
 		clioVerde.color="verde";
 		clioVerde.marca="renault";
-		clioVerde.modelo="clio";
+		clioVerde.setModelo("clio");
 		clioVerde.velocidad=0f;
 				
 		System.out.println(clioVerde.anio);
