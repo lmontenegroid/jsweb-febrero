@@ -1,8 +1,8 @@
 package ar.com.eduit.clase3;
 
 public class Articulo {
-	
-	//Atributos
+
+	//ATRIBUTOS
 	protected String titulo;
 	protected String autor;
 	protected Float precio;
@@ -10,22 +10,25 @@ public class Articulo {
 	
 	public static String TIPO = "articulo";
 	
-	
-	//Constructores
-	public Articulo(String titulo, Float precio, String autor) {
+	//CONSTRUCTORES
+	public Articulo(
+			String titulo,
+			Float precio,
+			String autor) {
 		this.titulo = titulo;
 		this.precio = precio;
 		this.autor = autor;
 	}
 	
-	public Articulo(String titulo, Float precio) {
+	public Articulo(
+			String titulo,
+			Float precio) {
+		
 		this.titulo = titulo;
-		this.precio = precio;
+		this.precio = precio;		
 	}
 
-	
-
-	//Gets n Sets
+	//GET/SET
 	public String getTitulo() {
 		return titulo;
 	}
@@ -58,13 +61,16 @@ public class Articulo {
 		this.imagen = imagen;
 	}
 	
+	//los hijos no podran modificar este comportamiento
+	public void informar() {
+		System.out.println("Titulo: " + this.titulo);
 		
-	public void informar(){
-		System.out.println("Título: " +this.titulo);
-		if(this.autor != null)
-			System.out.println("Autor: "+this.autor);
+		if(autor != null) {
+			System.out.println("Autor:" + this.autor);
+		}
 		
-		System.out.println("Precio: " +this.precio);
-		
+		System.out.println("Precio:" + this.precio);
 	}
+	
+	
 }

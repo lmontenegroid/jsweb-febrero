@@ -1,35 +1,38 @@
 package ar.com.eduit.clase3;
 
+import ar.com.eduit.clase4.BuscadorGeneral;
+
 public class MainBuscador {
 
 	public static void main(String[] args) {
 		
-		// 
 		String claveBusquedaIngresadaPorElUsuario = "iron man";
+
+		//crear una instancia de buscador SI
+		Buscador buscador = new BuscadorGeneral();
+		buscador.setClaveBusqueda(claveBusquedaIngresadaPorElUsuario);
 		
-		//Crear una instancia de buscador SI
-		Buscador buscador = new Buscador();
-		buscador.setClaveBusqueda(claveBusquedaIngresadaPorElUsuario); 
-		
-		//Ejecuto la busqueda
+		//ejecuto la busqueda
 		buscador.buscar();
 		
 		//mostrar los datos
 		Articulo[] resultados = buscador.getResultados();
 		
-		//estructura
-		/*for(int i=0; i<buscador.getTotal(); i++) {
-			resultados[i].informar();  
-		}*/
-		
-		for(Articulo resultado : resultados) {
-			//libro - musica - pasatiempo - pelicula
-			// no los distingue, todos forman parte de articulo 
-			System.out.println(Articulo.TIPO);
+		/*
+		for(int i=0; i < buscador.getTotal(); i++) {
+			Articulo resultado = resultados[i];
 			resultado.informar();
-			System.out.println("--------");
 		}
-		
+		*/
+		for(Articulo resultado :  resultados) {
+			//LIBRO
+			//MUSICA
+			//PASATIEMPO
+			//PELICULA
+			System.out.println(Articulo.TIPO);
+			resultado.informar();//POLIMORFISMO
+			System.out.println("-----");
+		}
 	}
 
 }

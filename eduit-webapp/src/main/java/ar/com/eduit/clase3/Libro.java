@@ -1,40 +1,31 @@
 package ar.com.eduit.clase3;
 
-public class Libro extends Articulo{
+public class Libro extends Articulo {
 
-	//Atributo
-	private String isbn; //atributos de instancia
+	private String isbn;//ATRIBUTOS DE INSTANCIA
 	
-	public static String TABLA = "TBL_LIBRO"; //atributos de clase
+	public static String TABLA = "TBL_LIBRO"; //ATRIBUTOS DE CLASE
 	
-	
-	//Constructores heredados
-	public Libro(String titulo, Float precio, String autor,String isbn) {
+	public Libro(String titulo, Float precio, String autor, String isbn) {
 		
 		//primero nace el padre
 		super(titulo, precio, autor);
 		
-		//luego el hijo
+		//luego el hijo	
 		this.isbn = isbn;
-		
 	}
 
-	// Gets n sets
 	public String getIsbn() {
 		return isbn;
 	}
 
-
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
-	
-	//cambia el comportamiento del padre
+
+	//cambia el comportamiento de padre
 	public void informar() {
 		super.informar();
-		System.out.println("ISBN: " +this.isbn);
+		System.out.println("ISBN:" + this.isbn);
 	}
-	
-	
-	
 }
