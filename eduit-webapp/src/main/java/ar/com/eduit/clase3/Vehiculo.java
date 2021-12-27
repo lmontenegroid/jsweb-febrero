@@ -4,13 +4,18 @@ public class Vehiculo {
 
 	protected String marca;
 	
+	//contructor
 	
-	//gets n sets
+	//métodos/get/set
 	public String getMarca() {
 		return this.marca;
 	}
 	
 	public void setMarca(String marca) {
-		this.marca = marca;
+		if(marca != null) {
+			this.marca = marca;
+		}else {
+			System.out.println("La marca no puede ser NULL");
+		}
 	}
 }

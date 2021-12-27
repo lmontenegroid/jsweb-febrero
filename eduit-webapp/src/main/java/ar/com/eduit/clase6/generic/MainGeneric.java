@@ -16,8 +16,6 @@ public class MainGeneric {
 		Long resultadoLong = parserLong.convert();
 		
 		System.out.println(resultadoLong);
-		
-
 	}
 
 }

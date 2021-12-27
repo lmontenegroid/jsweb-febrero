@@ -4,7 +4,9 @@ public class Avion extends Vehiculo {
 
 	private String nombre;
 
-	//Gets n Sets
+	//get/set
+	//ctrl/shit/s
+	
 	public String getNombre() {
 		return nombre;
 	}

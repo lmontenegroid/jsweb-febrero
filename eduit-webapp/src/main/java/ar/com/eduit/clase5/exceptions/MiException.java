@@ -1,7 +1,6 @@
 package ar.com.eduit.clase5.exceptions;
 
-
-//Checked Exception
+//CHECKED
 public class MiException extends Exception {
 
 	public MiException(String mensaje) {

@@ -1,4 +1,3 @@
-
 package ar.com.eduit.clase4;
 
 import ar.com.eduit.clase3.Articulo;

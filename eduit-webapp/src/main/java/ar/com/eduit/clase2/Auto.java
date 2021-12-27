@@ -2,10 +2,10 @@ package ar.com.eduit.clase2;
 
 import ar.com.eduit.clase3.Vehiculo;
 
-public class Auto extends Vehiculo{
+public class Auto extends Vehiculo {
 
 	//atributos
-	String marca;
+//	private String marca;
 	private String modelo;
 	Integer anio;
 	Long chasis;
@@ -76,19 +76,6 @@ public class Auto extends Vehiculo{
 		System.out.println("Velocidad Máxima:" + velocidadMaxima);
 		System.out.println("Velocidad:" + velocidad);
 	}
-	
-	// GETTER/SETTER
-	
-	public String getMarca() {
-		return this.marca;
-	}
-	
-	public void setMarca(String marca) {
-		if(marca != null) {
-			this.marca = marca;
-		}else
-			System.out.println("No se registró una marca");
-	}
 	public String getModelo() {
 		return modelo;
 	}
@@ -96,6 +83,17 @@ public class Auto extends Vehiculo{
 		this.modelo = modelo;
 	}
 	
+	//GETTER/SETTER
+	/*public String getMarca() {
+		return this.marca;
+	}
+	public void setMarca(String nuevaMarca) {//null
+		if(nuevaMarca != null) {
+			this.marca = nuevaMarca;
+		}else {
+			System.out.println("La marca no puede ser NULL");
+		}
+	}*/
+	
 	
 }
-

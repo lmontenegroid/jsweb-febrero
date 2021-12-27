@@ -15,5 +15,6 @@
 
 	<modules>
 		<module>eduit-webapp</module>
+		<module>eduit-domain</module>
 	</modules>
 </project>

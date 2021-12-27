@@ -4,8 +4,7 @@ public class ConsoleLog implements ILogger {
 
 	@Override
 	public void log() {
-		System.err.println("Informando solo por consola...");
-
+		System.err.println("Informando solo por consola...");		
 	}
 
 }
