@@ -7,9 +7,14 @@
 		<artifactId>eduit-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>eduit-domain</artifactId>
-	<name>proyecto que contiene las clases que representan tablas en la db</name>
-
-
-
+	<artifactId>eduit-service</artifactId>
+	<name>capa de servicio del proyecto jsweb</name>
+	<dependencies>
+	<!-- agrego la dependencia DAO -->
+		<dependency>
+			<groupId>ar.com.eduit</groupId>
+			<artifactId>eduit-dao</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>

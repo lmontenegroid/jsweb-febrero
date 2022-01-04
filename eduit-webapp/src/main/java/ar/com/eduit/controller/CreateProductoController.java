@@ -17,7 +17,7 @@ public class CreateProductoController {
 		String codigo = "000500";
 		Long tipoProducto = 1L; //celulares
 		
-		Producto nuevoProducto = new Producto(titulo, precio, codigo, tipoProducto);
+		Producto nuevoProducto = new Producto(titulo, codigo, precio, tipoProducto);
 		
 		//usar la interface que está en eduit-domain
 		

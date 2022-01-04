@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 public class GenericException extends Exception {
 
-	public GenericException(String msj, SQLException e) {
+	public GenericException(String msj, Throwable e) {
 		super(msj, e);
 	}
 
