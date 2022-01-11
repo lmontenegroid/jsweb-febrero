@@ -66,7 +66,7 @@ public class ProductoServiceImpl implements ProductoService {
 		try {
 			return this.dao.create(nuevoProducto);
 		} catch (DuplicatedException | GenericException e) {
-			throw new ServiceException("No se ha podido eliminar el producto", e);
+			throw new ServiceException("No se ha podido crear el producto", e);
 		}
 	}
 
