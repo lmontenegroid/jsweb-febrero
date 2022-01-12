@@ -2,21 +2,16 @@ package ar.com.eduit.domain;
 
 public class User {
 
-	//Atributos
 	private Long id;
 	private String username;
 	private String password;
-	
-	//Constructor
+
 	public User(Long id, String username, String password) {
-		super();
 		this.id = id;
 		this.username = username;
 		this.password = password;
 	}
 
-	
-	//Getters y Setters
 	public Long getId() {
 		return id;
 	}
@@ -40,10 +35,5 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	
-	
-	
-	
 	
 }

@@ -1,12 +1,14 @@
-package ar.com.eduit.service.exceptions;
+package ar.com.eduit.exceptions;
 
-
-//Excepcion de capa de servicio
+/**
+ * Exception de capa de servicio
+ * @author CHLopez
+ *
+ */
 public class ServiceException extends Exception {
 
 	public ServiceException(String message, Throwable cause) {
 		super(message, cause);
-
 	}
 	
 }

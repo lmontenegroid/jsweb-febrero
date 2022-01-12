@@ -5,7 +5,7 @@ import java.util.Collection;
 import ar.com.eduit.domain.Producto;
 import ar.com.eduit.domain.dao.exceptions.DuplicatedException;
 import ar.com.eduit.domain.dao.exceptions.GenericException;
-import ar.com.eduit.domain.dao.exceptions.NonExistException;
+import ar.com.eduit.domain.dao.exceptions.NonExistsException;
 
 public interface ProductoDAO {
 
@@ -28,8 +28,7 @@ public interface ProductoDAO {
 	
 	public Producto update(Producto producto) throws DuplicatedException, GenericException;
 	
-	public Producto delete(Long id) throws GenericException, NonExistException;
+	public Producto delete(Long id) throws GenericException, NonExistsException;
 	
-	public Producto delete(String codigo) throws GenericException, NonExistException;
-	
+	public Producto delete(String codigo) throws GenericException, NonExistsException;
 }

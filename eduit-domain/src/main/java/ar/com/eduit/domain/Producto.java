@@ -21,14 +21,7 @@ public class Producto {
 		this.tipoProducto = tipoProducto;
 	}
 	
-	public Producto(String titulo,  String codigo, Float precio,Long tipoProducto) {
-		this.titulo = titulo;
-		this.precio = precio;
-		this.codigo = codigo;
-		this.tipoProducto = tipoProducto;
-	}
-	
-	public Producto(String titulo,   Float precio, String codigo, Long tipoProducto) {
+	public Producto(String titulo, Float precio, String codigo, Long tipoProducto) {
 		this.titulo = titulo;
 		this.precio = precio;
 		this.codigo = codigo;

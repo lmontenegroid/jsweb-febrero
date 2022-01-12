@@ -1,5 +1,12 @@
+/**
+ * 
+ */
 package ar.com.eduit.parsers.enums;
 
+/**
+ * @author CHLopez
+ *
+ */
 public enum FileEnum {
 
 	CSV("csv");
@@ -13,6 +20,5 @@ public enum FileEnum {
 	public String getType() {
 		return type;
 	}
-	
 	
 }

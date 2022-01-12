@@ -1,9 +1,8 @@
 package ar.com.eduit.interfaces;
 
-import ar.com.eduit.service.exceptions.ServiceException;
+import ar.com.eduit.exceptions.ServiceException;
 
 public interface IAccion {
 
 	public void execute() throws ServiceException;
-
 }

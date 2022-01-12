@@ -8,7 +8,7 @@ import java.nio.file.Files;
 public class ProductosAArchivoMain {
 
 	public static void main(String[] args) {
-
+		
 		StringBuffer productos = new StringBuffer("titulo;precio;codigo;tipo_producto").append("\n");
 		productos.append("carpeta n3;250;car001;5").append("\n");
 		productos.append("pen driver;250;car002;6");
@@ -25,15 +25,13 @@ public class ProductosAArchivoMain {
 			fileWritter.write(productos.toString());
 			
 			fileWritter.close();
-			
-		} catch (IOException e) {
+		} catch (IOException e) {		
 			e.printStackTrace();
 		}
-		
+
 		File f = new File(outputPath);
 		
 		System.out.println(f.exists());
-
 	}
 
 }

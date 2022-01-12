@@ -6,19 +6,23 @@
 	ProductoService ps = new ProductoServiceImpl();
 	Collection<Producto> productos = ps.obtenerTodos();
 %>
-
-
 <html>
 <head>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+	integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
 	crossorigin="anonymous">
 </head>
-
 <body>
 	<div class="container">
+		<div class="row">
+			<a href="<%=request.getContextPath()%>/LogoutServlet" 
+				class="btn btn-primary btn-lg active" 
+				role="button" 
+				aria-pressed="true">
+					Logout
+			</a>
+		</div>
 		<div class="row">
 			<div class="col-sm-12 col-md-9 col-lg-6 col-xl-4">
 				<table class="table">
@@ -31,32 +35,18 @@
 						</tr>
 					</thead>
 					<tbody>
-						<%
-						for(Producto p : productos){
-							
-						
+					<%
+						for(Producto p : productos) {
 					%>
 						<tr>
 							<th scope="row"><%=p.getId() %></th>
 							<td><%=p.getTitulo() %></td>
 							<td><%=p.getPrecio() %></td>
 							<td><%=p.getTipoProducto() %></td>
-						</tr>
-						<%
+						</tr>						
+					<%
 						}
-						%>
-						<tr>
-							<th scope="row">2</th>
-							<td>Jacob</td>
-							<td>Thornton</td>
-							<td>@fat</td>
-						</tr>
-						<tr>
-							<th scope="row">3</th>
-							<td>Larry</td>
-							<td>the Bird</td>
-							<td>@twitter</td>
-						</tr>
+					%>
 					</tbody>
 				</table>
 			</div>
